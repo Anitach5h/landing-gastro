@@ -1,0 +1,235 @@
+.main {  
+    position: relative;  
+  }  
+  
+  .header-content {  
+    position: absolute;  
+    top: 8%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    text-align: center;  
+    padding: 20px;  
+    background-color: rgba(0, 0, 0, 0.2);  
+    border-radius: 10px;  
+    width: 90%;  
+    z-index: 1;  
+  }  
+  
+  .header-content h1 {  
+    font-size: var(--h1-font-size);  
+    font-family: var(--second-font);  
+    margin-bottom: 20px;  
+    color: var(--body-color);  
+  }  
+  
+  .header-content p {  
+    font-size: 18px;  
+    margin-bottom: 30px;  
+    color: var(--body2-color);  
+  }  
+  
+  .header-content .btn-1 {  
+    display: block;  
+    margin: 0 auto;  
+    max-width: 200px; 
+    justify-items: center; 
+    margin-top: 2%;
+  }  
+  
+  .btn-1 {  
+    display: inline-block;  
+    background-color: var(--first-color);  
+    color: var(--title-color);  
+    text-decoration: none;  
+    padding: 10px 20px;  
+    border-radius: 5px;  
+    font-weight: var(--font-semi-bold);  
+    transition: background-color 0.3s ease;  
+    margin-bottom: 5%;
+    text-align: center;
+    margin-top: 5%;
+    justify-items: center; 
+  }  
+  
+  .btn-1:hover {  
+    background-color: var(--first-color);  
+  }  
+  
+  .gastro {  
+    position: relative;  
+    background-color: var(--title-color);  
+    padding: 80px 0;  
+  }  
+  
+  .gastro-img {  
+     
+    
+    width: 100%;  
+    height: auto;  
+    display: block;  
+    margin: 0 auto;  
+  }  
+  
+
+  .gastro-content {  
+    align-items: center;  
+  }  
+  
+  .gastro-content h2 {  
+    font-size: var(--h2-font-size);  
+    
+    font-family: var(--body-font);
+    margin-bottom: 20px;  
+  }  
+  
+  .txt-p {  
+    font-size: 18px;  
+    margin-bottom: 40px;  
+    text-align: center;
+  }  
+  
+  .gastro-group {  
+    display: flex;  
+    justify-content: center;  
+    gap: 40px;  
+    margin-bottom: 40px;  
+  }  
+  
+  .gastro-1 {  
+    background-color: var(--title-color);  
+    border-radius: 10px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    padding: 30px;  
+    text-align: center;  
+    max-width: 300px;  
+  }  
+  
+  .gastro-1 img {  
+    width: 70%;  
+    height: auto;  
+    margin-bottom: 20px;  
+  }  
+  
+  .gastro-1 h3 {  
+    font-size: 24px;  
+    margin-bottom: 10px;  
+    font-family: var(--second-font)
+  }  
+  
+  .gastro-1 p {  
+    font-size: 16px;  
+    color: var(--text-color);  
+  }  
+  .gastro-content-container .btn-1 {  
+    display: block;  
+    margin: 0 auto;  
+    max-width: 200px; 
+    justify-items: center; 
+    margin-top: 2%;
+  
+  } 
+  
+  .services {  
+    padding: 20px 0;  
+  }  
+  
+  .services-content-container {  
+    text-align: center;  
+    width: 85%;  
+    margin: 0 auto;  
+  }  
+  
+  .services-content h2 {  
+    font-size: var(--h2-font-size);  
+    font-family: var(--second-font);  
+    margin-bottom: 20px;  
+  }  
+  
+  .services-group {  
+    display: flex;  
+    justify-content: center;  
+    gap: 40px;  
+    margin-bottom: 40px; 
+  }  
+  
+  .services-1 {  
+    background-color: var(--title-color);  
+    border-radius: 10px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    padding: 30px;  
+    text-align: center;  
+    max-width: 300px; 
+  }  
+  
+  .services-1 img {  
+    width: 70%;  
+    height: auto;  
+    margin-bottom: 20px;  
+    border-radius: 10%;  
+  }  
+  
+  .services-1 h3 {  
+    font-size: 24px;  
+    margin-bottom: 10px;  
+    font-family: var(--second-font);  
+  }  
+  
+  .services-content p {  
+    font-size: 18px;  
+    margin-bottom: 40px;  
+    color: var(--text-color);  
+  }  
+  
+  .services-content .btn-1 {  
+    display: inline-block;  
+     padding: 10px 30px;  
+    margin-top: 15%;
+  }  
+  
+  @media (max-width: 768px) {  
+    .header-content {  
+      top: 40%;  
+      width: 90%;  
+      background-color: rgba(0, 0, 0, 0.8); 
+     
+    
+    }  
+    .header-content p {
+        color: var(--title-color);
+    }
+    .header-content h1 {
+        color: var(--title-color);
+        font-size: var(--h1-font-size);
+    }
+    .services-group {  
+      flex-direction: column;  
+      align-items: center;  
+    }  
+  
+    .services-1 {  
+      max-width: 300px;  
+    }  
+    .gastro-group {  
+        flex-direction: column;  
+        align-items: center;  
+      }  
+    
+      .gastro-1 {  
+        max-width: 300px;  
+      }  
+  }  
+  
+  @media (max-width: 480px) {  
+    .header-content h1 {  
+      font-size: var(--h2-font-size);  
+      
+    }  
+  
+    .header-content p {  
+      font-size: 16px;  
+    }  
+  
+    .services-content p {  
+      font-size: 16px;  
+    }  
+  } 

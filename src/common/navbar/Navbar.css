@@ -1,0 +1,122 @@
+.header {  
+  position: fixed;  
+  width: 100%;  
+  top: 0;  
+  left: 0;  
+  background-color: hsla(0, 0%, 6%, 0.6);  
+  backdrop-filter: blur(16px);  
+  -webkit-backdrop-filter: blur(16px);  
+  z-index: var(--z-fixed);  
+}  
+
+.nav {  
+  display: flex;  
+  align-items: center;  
+  justify-content: space-between;  
+  position: relative;  
+  height: var(--header-height);  
+  margin: 1rem;  
+}  
+
+.nav__logo {  
+  color: var(--first-color);  
+  transition: color 0.4s;  
+  font-size: var(--h1-font-size);  
+  font-family: var(--second-font);  
+}  
+
+.nav__toggle,  
+.nav__close {  
+  font-size: 1.5rem;  
+  color: var(--title-color);  
+  cursor: pointer;  
+}  
+
+.nav__list {  
+  display: flex;  
+  flex-direction: column;  
+  row-gap: 2.5rem;  
+  font-size: var(--h2-font-size);  
+}  
+
+.nav__link {  
+  color: var(--title-color);  
+  font-weight: var(--font-semi-bold);  
+  transition: color 0.4s;  
+}  
+
+.nav__link:hover {  
+  color: var(--first-color);  
+}  
+
+.nav__close {  
+  position: absolute;  
+  top: 1rem;  
+  right: 1.5rem;  
+}  
+
+.nav__menu {  
+  position: fixed;  
+  top: 0;  
+  right: 0;  
+  background-color: hsla(0, 0%, 6%, 0.8);  
+  height: 100%;  
+  width: 100%;  
+  padding: 6rem 0 0 2rem;  
+  transform: translateX(100%);  
+  transition: transform 0.4s ease-in-out, height 0.4s ease-in-out, width 0.4s ease-in-out;  
+  z-index: 999;  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+}  
+
+.show-menu {  
+  transform: translateX(0);  
+}  
+
+.nav__list {  
+  color: var(--text-color);  
+  background-color: hsla(0, 0%, 6%, 0.8);  
+  width: 100%;  
+  padding: 2rem 2rem;  
+  align-items: center;  
+}  
+
+.nav__item {  
+  width: 100%;  
+}  
+
+@media screen and (min-width: 1150px) {  
+  .nav {  
+    height: calc(var(--header-height) + 1rem);  
+  }  
+  .nav__toggle, .nav__close {  
+    display: none;  
+  }  
+
+  .nav__menu {  
+    position: static;  
+    background-color: transparent;  
+    height: auto;  
+    width: auto;  
+    padding: 0;  
+    transform: translateX(0);  
+    transition: none;  
+    z-index: auto;  
+    display: flex;  
+    flex-direction: row;  
+    align-items: center;  
+    column-gap: 2.5rem;  
+  }  
+
+  .nav__list {  
+    flex-direction: row;  
+    column-gap: 2.5rem;  
+    background-color: hsla(0, 0%, 6%, 0);  
+  }  
+
+  .nav__item {  
+    width: auto;  
+  }  
+}

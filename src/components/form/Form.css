@@ -1,0 +1,197 @@
+body {  
+   margin-top: 10%; 
+    padding: 0;  
+    background: var(--title-color);  
+    font-size: 16px;  
+    color: #777;  
+    font-family: var(--body-font);  
+    font-weight: 300;  
+  }  
+  
+  .container-form {  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    padding: 20px;  
+    display: flex;  
+    justify-content: center;  
+  }  
+  
+  #login-box {  
+    position: relative;  
+    width: 700px;  
+    height: 600px;  
+    background: var(--title-color);  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);  
+    display: flex;  
+    flex-direction: row;  
+  }  
+  
+  .left-box {  
+    flex: 1;  
+    box-sizing: border-box;  
+    padding: 40px;  
+  }  
+  
+  .left-box h1 {  
+    margin: 0 0 20px 0;  
+    font-weight: 300;  
+    font-size: 28px;  
+  }  
+  
+  .left-box input[type="text"],  
+  .left-box input[type="tel"],  
+  .left-box textarea,  
+  .left-box input[type="email"] {  
+    display: block;  
+    box-sizing: border-box;  
+    margin-bottom: 20px;  
+    padding: 4px;  
+    width: 220px;  
+    height: 40px;  
+    border: none;  
+    outline: none;  
+    border-bottom: 1px solid #aaa;  
+    font-weight: 400;  
+    font-size: 14px;  
+    transition: 0.2s ease;  
+  }  
+  
+  .left-box textarea {  
+    height: auto;  
+    resize: none;  
+  }  
+  
+  .left-box input[type="submit"] {  
+    margin-bottom: 28px;  
+    width: 120px;  
+    height: 40px;  
+    background: var(--first-color);  
+    border: none;  
+    border-radius: 2px;  
+    color: var(--title-color);  
+    font-weight: 500;  
+    text-transform: uppercase;  
+    transition: 0.25s ease;  
+    cursor: pointer;  
+  }  
+  
+  .left-box input[type="submit"]:hover,  
+  .left-box input[type="submit"]:focus {  
+    background: var(--first-color);  
+    transition: 0.2s ease;  
+  }  
+  .left-box input::placeholder, .left-box textarea::placeholder {
+    font-size: 14px;
+    color: var(--body2-font);
+    font-family: var(--body-font);
+
+  }
+  
+  .right-box {  
+    flex: 1;  
+    box-sizing: border-box;  
+    padding: 40px;  
+    background-image: url(https://www.themealdb.com/images/media/meals/vdwloy1713225718.jpg);  
+    background-size: cover;  
+    background-position: center;  
+  }  
+  
+ 
+  
+  .right-box .signinwith {  
+    display: block;  
+    margin-bottom: 40px;  
+    font-size: 28px;  
+    color: var(--title-color);  
+    text-align: center;  
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);  
+  }  
+  
+  .right-box .social-buttons {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+  }  
+  
+  .right-box button.social {  
+    margin-bottom: 20px;  
+    width: 220px;  
+    height: 40px;  
+    border: none;  
+    border-radius: 5px;  
+    color: var(--title-color);  
+    font-size: 20px;  
+    font-weight: 600;  
+    transition: 0.2s ease;  
+    cursor: pointer;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+  }  
+  
+  .right-box button.social svg {  
+    margin-right: 8px;  
+  }  
+  
+  .whatsapp {  
+    background: #075e54;  
+  }  
+  
+  .linkedin {  
+    background: #0073b1;  
+  }  
+  
+  .instagram {  
+    background: #D43089;  
+  }  
+  
+  @media (max-width: 768px) {  
+    #login-box {  
+      width: 100%;  
+      height: auto;  
+      display: flex;  
+      flex-direction: column;  
+    }  
+  
+    .left-box,  
+    .right-box {  
+      position: static;  
+      width: 100%;  
+      height: auto;  
+    }  
+  
+    .social-buttons {  
+      flex-direction: row;  
+      justify-content: center;  
+    }  
+  
+    button.social {  
+      width: 150px;  
+      margin: 0 10px;  
+    }  
+  }  
+  
+  @media (max-width: 480px) {  
+    .container-form { 
+        margin-top: 15%;
+    }
+    .left-box input[type="text"],  
+    .left-box input[type="tel"],  
+    .left-box textarea,  
+    .left-box input[type="email"] {  
+      font-size: 16px;  
+      padding: 8px;  
+      margin-bottom: 16px;  
+      width: 100%;  
+    }  
+  
+    .left-box input[type="submit"] {  
+      font-size: 16px;  
+      height: 48px;  
+    }  
+  
+    button.social {  
+      font-size: 14px;  
+      height: 48px;  
+    }  
+  }
