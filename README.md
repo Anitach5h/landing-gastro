@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Landing Gastro  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Landing Gastro es un sitio web responsivo diseñado para restaurantes y establecimientos gastronómicos. Ofrece una página de inicio atractiva, una carta de menú interactiva y una sección de contacto.  
 
-## Available Scripts
+## Tabla de contenidos  
 
-In the project directory, you can run:
+- [Características](#características)  
+- [Instalación](#instalación)  
+- [Uso](#uso)  
+- [Tecnologías utilizadas](#tecnologías-utilizadas)  
+- [Contacto](#contacto)  
 
-### `npm start`
+## Características  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Utiliza la API pública "Free Meal Api" para obtener información sobre los platos (nombre, foto y precio).  
+- Muestra los platos en tarjetas (cards) de manera responsiva utilizando Flex.  
+- Incluye una barra de búsqueda que permite a los usuarios buscar platos por nombre.  
+- Limita los resultados de la API a 9 platos en la página de inicio.  
+- Implementa un botón para volver al inicio de la página.  
+- Cuenta con un menú de navegación responsivo con un menú hamburguesa para versiones móviles.  
+- Utiliza Material Icons para los iconos del menú y las redes sociales.  
+- Incluye una sección de contacto con un formulario y enlaces a redes sociales.  
+- Muestra un modal cuando no se encuentran resultados coincidentes en la barra de búsqueda.  
+## Instalación  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clona el repositorio:  
+git clone https://github.com/tu-usuario/landing-gastro.git
 
-### `npm test`
+2. Instala las dependencias:  
+cd landing-gastro
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Inicia el proyecto:  
+npm start
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Uso  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Una vez que hayas instalado y configurado el proyecto, puedes acceder a las siguientes páginas:  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Inicio**: Muestra información general sobre el restaurante y una sección de bienvenida.  
+- **Carta**: Presenta el menú del restaurante de manera interactiva y atractiva.  
+- **Contacto**: Permite a los usuarios enviar un formulario de contacto.  
 
-### `npm run eject`
+## Tecnologías utilizadas  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React.js  
+- React Router  
+- React Icons  
+- CSS   
+- Fetch API  
+- Flex Layout  
+- Modal  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contacto  
 
-## Learn More
+Si tienes alguna pregunta o comentario, puedes contactarme a través de:  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: [anabelagallegos0@gmail.com](mailto: anabelagallegos0@gmail.com)  
+- GitHub: [Anitach5h](https://github.com/Anitach5h)  
